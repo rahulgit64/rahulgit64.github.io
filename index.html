@@ -699,17 +699,97 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+
+  nav {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: 1fr;
-    padding: 6rem 2rem 4rem;
+    padding: 7rem 1.2rem 3rem;
     text-align: center;
+    gap: 2rem;
   }
-  .hero-image-wrap { display: none; }
-  .hero-stats { justify-content: center; }
-  .hero-actions { justify-content: center; }
-  nav { padding: 1.2rem 2rem; }
-  .nav-links { display: none; }
-  section { padding: 4rem 2rem; }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+
+  .hero-title {
+    font-size: 0.9rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    min-width: 70px;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  section {
+    padding: 4rem 1.2rem;
+  }
+
+  .services-grid,
+  .cs-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
 }
 </style>
 </head>
